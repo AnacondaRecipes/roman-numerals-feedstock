@@ -23,14 +23,18 @@ requirements:
     - python
 
 test:
+  source_files:
+    - tests
   imports:
     - roman_numerals
   commands:
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
     - pip check
+    - pytest -vv .
   requires:
     - python
     - pip
+    - pytest
 
 about:
   home: https://github.com/AA-Turner/roman-numerals
