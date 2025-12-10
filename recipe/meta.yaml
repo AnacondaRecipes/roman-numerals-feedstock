@@ -34,7 +34,7 @@ test:
   requires:
     - python
     - pip
-    - pytest
+    - pytest >=8
 
 about:
   home: https://github.com/AA-Turner/roman-numerals
