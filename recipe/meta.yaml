@@ -26,6 +26,7 @@ test:
   imports:
     - roman_numerals
   commands:
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
     - pip check
   requires:
     - python
